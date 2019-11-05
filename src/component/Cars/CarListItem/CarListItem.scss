@@ -1,0 +1,58 @@
+/*
+|--------------------------------------------------------------------------
+| List item
+|--------------------------------------------------------------------------
+| @namespace: car-
+|
+*/
+.car-ListItem {
+  display: block;
+  padding: 16px 32px 0 32px;
+  transition: color var(--Global_Transition);
+
+  &::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 1px;
+    margin: 16px auto 0;
+    background-color: var(--Color_Border);
+  }
+
+  .car-List_Item:hover & {
+    color: var(--Color_Body)
+  }
+
+  .car-List_Item:last-child & {
+    &::after {
+      background-color: transparent;
+    }
+  }
+}
+
+.car-ListItem_ImageContainer {
+  max-width: 120px;
+}
+
+.car-ListItem_Image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-ListItem_Body {
+  align-items: center;
+  display: flex;
+}
+
+.car-ListItem_Content {
+  margin-left: calc(var(--Grid_Gutter) * 2);
+}
+
+.car-ListItem_Text {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}

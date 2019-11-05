@@ -1,0 +1,30 @@
+/*
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+| @namespace: hd-
+|
+*/
+@import "../../../styles/app";
+
+.hd-Header {
+  position: relative;
+  z-index: 11;
+  align-items: center;
+  display: flex;
+  padding: 24px 0;
+  background-color: var(--Color_Brand);
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.04);
+}
+
+.hd-Header_Inner {
+  @include Grid_Container;
+}
+
+.hd-Header_LogoContainer {
+  display: flex;
+
+  svg {
+    fill: #fff;
+  }
+}

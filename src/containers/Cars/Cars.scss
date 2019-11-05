@@ -1,0 +1,39 @@
+/*
+|--------------------------------------------------------------------------
+| Cars
+|--------------------------------------------------------------------------
+| @namespace: car-
+|
+*/
+@import "../../styles/app";
+
+.car-Cars {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.car-Cars_Inner {
+  @include Grid_Container;
+}
+
+.car-Cars_Columns {
+  display: flex;
+}
+
+.car-Cars_Column-aside {
+  width: 380px;
+  margin-right: calc(var(--Grid_Gutter) * 2);
+  // This height would be calculated but for the sake of time it's fixed for now
+  height: calc(100vh - 138px);
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+
+.car-Cars_Body {
+  margin: 32px 0;
+}
+
+.car-Cars_Column-main {
+  flex: 1;
+  display: flex;
+}

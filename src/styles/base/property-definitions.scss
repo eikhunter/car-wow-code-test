@@ -1,0 +1,48 @@
+/* We use an order that is beneficial for a 'settings' file */
+/* stylelint-disable */
+:root {
+  /*
+  |--------------------------------------------------------------------------
+  | Colours
+  |--------------------------------------------------------------------------
+  |
+  */
+  --Color_Brand: #00a4ff;
+  --Color_Border: #f9f9f9;
+  --Color_Body: #4a4a4a;
+
+  --Color_Anchor: var(--Color_Brand);
+
+  /*
+  |--------------------------------------------------------------------------
+  | Fonts
+  |--------------------------------------------------------------------------
+  |
+  */
+  /**
+  * Font - Families
+  */
+  --Font_Family: 'Karla', Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  --Font_Family-body: var(--Font_Family);
+
+  /*
+  |--------------------------------------------------------------------------
+  | Grid
+  |--------------------------------------------------------------------------
+  |
+  */
+  --Grid_Container: 1100px;
+  --Grid_Gutter: 16px;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Miscellaneous
+  |--------------------------------------------------------------------------
+  |
+  */
+  --Box_Shadow: 0 2px 20px 1px rgba(0, 0, 0, 0.08);
+  --Global_Radius: 6px;
+  --Global_Transition: 0.3s;
+  --Transition_EaseOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.075);
+  --Header_Height: 83px;
+}

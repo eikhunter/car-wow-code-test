@@ -1,0 +1,205 @@
+@import "./mixins";
+
+/*
+|--------------------------------------------------------------------------
+| Font mixins
+|--------------------------------------------------------------------------
+|
+*/
+@mixin Font_Kicker {
+  min-height: 16px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--Color_Brand);
+
+  @include md {
+    min-height: 20px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin Font_Kicker-small {
+  @include Font_Kicker;
+
+  min-height: 14px;
+
+  font-size: 10px;
+  line-height: 14px;
+
+  @include md {
+    min-height: 16px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@mixin Font_14-18 {
+  min-height: 18px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin Font_16-28 {
+  min-height: 20px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  @include sm {
+    min-height: 26px;
+
+    line-height: 26px;
+  }
+
+  @include md {
+    min-height: 28px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+@mixin Font_18-30 {
+  min-height: 28px;
+
+  font-size: 16px;
+  line-height: 28px;
+
+  @include lg {
+    min-height: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@mixin Font_20-28 {
+  min-height: 26px;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 26px;
+
+  text-transform: uppercase;
+
+  @include md {
+    min-height: 28px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@mixin Font_22-36 {
+  min-height: 26px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  font-family: var(--Font_Family-inknut);
+
+  @include sm {
+    min-height: 32px;
+
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  @include md {
+    min-height: 36px;
+
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+@mixin Font_26-38 {
+  min-height: 32px;
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: var(--Font_Family-inknut);
+
+  @include sm {
+    min-height: 34px;
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+  }
+
+  @include md {
+    min-height: 36px;
+
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@mixin Font_26-42 {
+  min-height: 32px;
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: var(--Font_Family-inknut);
+
+  @include sm {
+    min-height: 36px;
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+  }
+
+  @include md {
+    min-height: 42px;
+
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@mixin Font_44-58 {
+  font-size: 24px;
+
+  @include sm {
+    min-height: 58px;
+
+    font-size: 44px;
+    line-height: 58px;
+  }
+}
+
+@mixin Font_48-64 {
+  min-height: 34px;
+
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 34px;
+  font-family: var(--Font_Family-inknut);
+
+  @include sm {
+    min-height: 54px;
+
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  @include md {
+    min-height: 64px;
+
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
