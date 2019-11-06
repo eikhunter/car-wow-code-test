@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../Header/Header';
+import Loader from '../Loader/Loader';
 
 import './Template.scss';
 
@@ -13,10 +14,7 @@ const Template: React.FC<Props> = ({ children, loading }) => {
         <div className="tmp-Template">
             <Header />
 
-            {!loading &&
-            // Add loader here
-            children
-            }
+            {!loading ? children : <Loader />}
         </div>
     )
 };
