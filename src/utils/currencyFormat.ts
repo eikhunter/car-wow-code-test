@@ -6,4 +6,3 @@ export const currencyFormat = (price: number, currency: string): string => {
 };
 
 const precision = (value: number): number | undefined => (value % 1 === 0 ? 0 : undefined);
-
