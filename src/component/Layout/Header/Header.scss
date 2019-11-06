@@ -15,6 +15,10 @@
   padding: 24px 0;
   background-color: var(--Color_Brand);
   box-shadow: 0 0 10px 5px rgba(0,0,0,0.04);
+
+  @include xs {
+    padding: 8px 0;
+  }
 }
 
 .hd-Header_Inner {
@@ -23,6 +27,11 @@
 
 .hd-Header_LogoContainer {
   display: flex;
+
+  @include xs {
+    max-width: 80px;
+    margin: 0 auto;
+  }
 
   svg {
     fill: #fff;

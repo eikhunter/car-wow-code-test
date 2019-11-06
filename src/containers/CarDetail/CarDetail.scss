@@ -1,0 +1,183 @@
+/*
+|--------------------------------------------------------------------------
+| Detail
+|--------------------------------------------------------------------------
+| @namespace: car-
+|
+*/
+@import "../../styles/app";
+
+.car-Detail {
+  margin: 32px 0;
+}
+
+.car-Detail_Inner {
+  @include Grid_Container;
+}
+
+.car-Detail_Columns {
+  flex-direction: column;
+  display: flex;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -16px;
+  }
+}
+
+.car-Detail_Column {
+  width: 100%;
+
+  @include md {
+    margin: 0 var(--Grid_Gutter);
+  }
+}
+
+.car-Detail_Column-content {
+  width: 100%;
+
+  @include md {
+    max-width: calc(6 / 12 * 100% - 32px);
+  }
+
+  @include lg {
+    max-width: calc(5 / 12 * 100% - 32px);
+  }
+}
+
+.car-Detail_Column-image {
+  order: -1;
+  width: 100%;
+
+  @include md {
+    order: 0;
+    max-width: calc(6 / 12 * 100% - 32px);
+  }
+}
+
+.car-Detail_Back {
+  @include Font_Kicker-small;
+
+  display: block;
+  margin-bottom: 16px;
+  transition: color var(--Global_Transition);
+
+  &:hover {
+    color: var(--Color_Body);
+  }
+}
+
+.car-Detail_ImageContainer {
+  display: flex;
+  width: 100%;
+  transform: scaleX(-1)
+}
+
+.car-Detail_Image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.car-Detail_Body {
+  padding: 16px 16px 24px;
+  border-radius: 8px;
+  background-color: #fff;
+
+  @include sm {
+    padding: 32px;
+  }
+
+  @include md {
+    min-height: calc(100vh - 138px);
+  }
+}
+
+.car-Detail_Kicker {
+  @include Font_Kicker;
+}
+
+.car-Detail_Title {
+  @include Font_26-42;
+
+  margin-bottom: 8px;
+
+  @include sm {
+    margin-bottom: 16px;
+  }
+}
+
+.car-Detail_KeyInformation {
+  align-items: center;
+  display: flex;
+  margin-top: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--Color_Border);
+  border-bottom: 1px solid var(--Color_Border);
+
+  @include sm {
+    margin-top: 32px;
+    padding: 32px 0;
+  }
+}
+
+.car-Detail_Information {
+  flex: 1;
+  text-align: center;
+}
+
+.car-Detail_Key {
+  @include Font_Kicker;
+
+  margin-bottom: 4px;
+
+  @include sm {
+    margin-bottom: 8px;
+  }
+}
+
+.car-Detail_Value {
+  @include Font_20-28;
+}
+
+.car-Detail_Colours {
+  margin-top: 16px;
+  text-align: center;
+
+  @include sm {
+    margin-top: 32px;
+  }
+
+  @include lg {
+    margin-top: 48px;
+  }
+}
+
+.car-Detail_List {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 8px -8px 0;
+
+  @include sm {
+    margin: 16px -16px 0;
+  }
+}
+
+.car-Detail_Item {
+  flex-shrink: 0;
+  margin: 8px calc(var(--Grid_Gutter) / 2) 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid var(--Color_Grey);
+
+  @include sm {
+    margin: 16px var(--Grid_Gutter) 0;
+    height: 50px;
+    width: 50px;
+  }
+}

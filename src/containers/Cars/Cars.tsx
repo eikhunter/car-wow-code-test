@@ -40,25 +40,24 @@ class Cars extends React.Component<Props> {
     render() {
         const { carsStore } = this.props;
 
-        return (!carsStore.loading && (
-                <div className="car-Cars">
-                    <Template>
-                        <div className="car-Cars_Inner">
-                            <div className="car-Cars_Body">
-                                <div className="car-Cars_Columns">
-                                    <aside className="car-Cars_Column car-Cars_Column-aside">
-                                        <CarsList cars={carsStore.cars} onHover={this._onHover}/>
-                                    </aside>
+        return (
+            <div className="car-Cars">
+                <Template loading={carsStore.loading}>
+                    <div className="car-Cars_Inner">
+                        <div className="car-Cars_Body">
+                            <div className="car-Cars_Columns">
+                                <aside className="car-Cars_Column car-Cars_Column-aside">
+                                    <CarsList cars={carsStore.cars} onHover={this._onHover}/>
+                                </aside>
 
-                                    <main className="car-Cars_Column car-Cars_Column-main">
-                                        <CarListDetail car={this.activeHoveredCar}/>
-                                    </main>
-                                </div>
+                                <main className="car-Cars_Column car-Cars_Column-main">
+                                    <CarListDetail car={this.activeHoveredCar}/>
+                                </main>
                             </div>
                         </div>
-                    </Template>
-                </div>
-            )
+                    </div>
+                </Template>
+            </div>
         );
     }
 }

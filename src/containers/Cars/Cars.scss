@@ -8,8 +8,10 @@
 @import "../../styles/app";
 
 .car-Cars {
-  height: 100vh;
-  overflow: hidden;
+  @include sm {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .car-Cars_Inner {
@@ -17,16 +19,22 @@
 }
 
 .car-Cars_Columns {
-  display: flex;
+  @include sm {
+    display: flex;
+  }
 }
 
 .car-Cars_Column-aside {
-  width: 380px;
-  margin-right: calc(var(--Grid_Gutter) * 2);
   // This height would be calculated but for the sake of time it's fixed for now
-  height: calc(100vh - 138px);
   border-radius: 8px;
-  overflow-y: scroll;
+  overflow: hidden;
+
+  @include sm {
+    width: 380px;
+    min-height: calc(100vh - 138px);
+    margin-right: calc(var(--Grid_Gutter) * 2);
+    overflow-y: scroll;
+  }
 }
 
 .car-Cars_Body {
@@ -35,5 +43,9 @@
 
 .car-Cars_Column-main {
   flex: 1;
-  display: flex;
+  display: none;
+
+  @include sm {
+    display: flex;
+  }
 }

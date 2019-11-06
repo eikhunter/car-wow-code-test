@@ -16,8 +16,8 @@ const CarsList: React.FC<Props> = ({ cars, onHover }) => {
         <div className="car-List">
             <ul className="car-List_List">
                 {cars.map((car, index) => (
-                    <li onMouseEnter={() => onHover(index)} className="car-List_Item">
-                        <CarListItem key={car.id} car={car}  />
+                    <li key={car.id} onMouseEnter={() => onHover(index)} className="car-List_Item">
+                        <CarListItem car={car}  />
                     </li>
                 ))}
             </ul>

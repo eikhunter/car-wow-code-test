@@ -43,6 +43,7 @@
 
 .car-ListDetail_Price {
   @include Font_22-36;
+
   font-weight: 700;
   margin-left: 32px;
 }
@@ -54,18 +55,19 @@
 }
 
 .car-ListDetail_Button {
-  padding: 12px var(--Grid_Gutter);
+  padding: 4px var(--Grid_Gutter);
   border-radius: 8px;
-  border: 2px solid var(--Color_Brand);
-  background-color: var(--Color_Brand);
+  border: 2px solid var(--Color_Brand-secondary);
+  background-color: var(--Color_Brand-secondary);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
   font-weight: 700;
+  font-size: 14px;
   transition: background-color var(--Global_Transition), color var(--Global_Transition);
 
   &:hover {
     background-color: transparent;
-    color: var(--Color_Brand);
+    color: var(--Color_Brand-secondary);
   }
 }
