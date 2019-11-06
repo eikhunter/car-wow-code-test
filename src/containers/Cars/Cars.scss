@@ -31,8 +31,9 @@
 
   @include sm {
     width: 380px;
-    min-height: calc(100vh - 138px);
+    height: calc(100vh - 138px);
     margin-right: calc(var(--Grid_Gutter) * 2);
+    overflow: visible;
     overflow-y: scroll;
   }
 }

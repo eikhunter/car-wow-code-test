@@ -13,7 +13,10 @@ const Template: React.FC<Props> = ({ children, loading }) => {
         <div className="tmp-Template">
             <Header />
 
-            {!loading && children}
+            {!loading &&
+            // Add loader here
+            children
+            }
         </div>
     )
 };
